@@ -1,0 +1,619 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background: #161616;
+}
+
+/*전체 속성 초기화*/
+
+#all {
+  display: none;
+}
+
+/*배경컬러*/
+
+ul li {
+  list-style: none;
+}
+
+/*전체 리스트들의 블릿 없애기*/
+
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+/*링크 글자들 밑줄없애기*/
+
+a img {
+  border: none;
+}
+
+/*링크이미지 파란테두리 없애기*/
+
+header {
+  width: 100%;
+}
+
+#topmenu {
+  width: 100%;
+  height: 30px;
+  background: #666;
+}
+
+/*상단메뉴, 검색 영역*/
+
+#toparea {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/*상단메뉴 영역 크기를 설정하고 가운데 정렬
+/ 가운데 정렬하고자하는 영역이 있다면 역역의 가로 너비를 설정해야 가능함*/
+
+.toplist {
+  position: absolute;
+  top: 0;
+  right: 230px;
+}
+
+/*상단메뉴 위치정리*/
+
+.toplist li {
+  display: inline-block;
+  margin: 0 8px;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+/*상단메뉴 옆줄로 나란히*/
+
+.toplist a:link {
+  color: #CCC;
+}
+
+.toplist a:hover {
+  color: #A2B5C8;
+}
+
+/*상단메뉴, 호버시의 컬러*/
+
+.search {
+  position: absolute;
+  top: 3px;
+  right: 40px;
+  padding: 3px 5px;
+}
+
+/*상단 검색 텍스트입력상자 절대값 포지션으로 위치정리*/
+
+.search_icon {
+  position: absolute;
+  top: 4px;
+  right: 3px;
+  color: #FFF;
+  margin-right: 10px;
+}
+
+/*상단 돋보기 아이콘의 위치정리*/
+
+#gnbarea {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* 메인메뉴들을 감싸는 부분:부모영역 */
+
+/* - 중요포인트: 부모 위치를 relative; 상대값으로 두면
+자식들이 절대값을 가져도 화면의 최상단이 아닌 부모영역 기준으로 정리가능함. */
+
+#logo {
+  margin-top: 10px;
+}
+
+/*로고 */
+
+#logo img {
+  width: 200px;
+  height: 70px;
+}
+
+#gnb {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  margin-right: 25px;
+}
+
+/* 메인메뉴 포지션을 절대값으로 위치정리 */
+
+#gnb ul li {
+  display: inline-block;
+  margin-left: 25px;
+  /*메인메뉴- 한줄로 나란히*/
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+#gnb a:link {
+  color: #FFF;
+}
+
+#gnb a:hover {
+  color: #FC6;
+}
+
+#main_area {
+  width: 100%;
+  height: 400px;
+  background: #EEE;
+}
+
+/*메인영역- 좌우로 화면에 꽉차게 배경컬러를 넣기위해 가로 100% 크기 */
+
+#main {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#nextButton {
+  position: absolute;
+  border-style: none;
+  right: 230px;
+  top: 300px;
+}
+
+#nextButton img {
+  width: 30px;
+  height: 70px;
+}
+
+#prevButton {
+  position: absolute;
+  border-style: none;
+  left: 230px;
+  top: 300px;
+}
+
+#prevButton img {
+  width: 30px;
+  height: 70px;
+}
+
+#youtube {
+  width: 1000px;
+  height: 400px;
+  frameborder: 0;
+  position: relative;
+  display: none;
+}
+
+#youtube iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/*메인이미지가 들어갈 부분- 가운데 위치 설정을 하기 위해 웹페이지 크기인 1000px로 가운데 넣어줌*/
+
+#contents {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* 내용을 둘러싼 영역- 웹페이지 크기인 1000px*/
+
+#product {
+  height: 230px;
+  margin: 20px 0;
+}
+
+/* 제품 들어갈 영역- 높이 지정 */
+
+#product .food {
+  width: 235px;
+  height: 227px;
+  overflow: hidden;
+  display: inline-block;
+  margin-left: 14px;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+/*제품- 한줄로 나란히 */
+
+#product .food:first-child {
+  margin-left: 0px;
+}
+
+/*제품중- 첫번째 왼쪽여백 빼기*/
+
+#product .food:hover {
+  /* border: dashed 2px #FC6; */
+  box-sizing: border-box;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+#bn {
+  width: 1000px;
+  height: 216px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* 높이 */
+
+#bn #banner {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  /*배너-왼쪽에 위치 */
+  margin: 0 40px 30px 0;
+}
+
+#bn #notice {
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  /*공지사항-배너 옆 오른쪽에 위치 */
+  width: 400px;
+  height: 216px;
+  padding-top: 20px;
+}
+
+#notice ul li {
+  font-size: 12px;
+  line-height: 190%;
+}
+
+#notice ul li b {
+  font-size: 14px;
+}
+
+#bn #notice a:link {
+  color: #CCC;
+}
+
+#bn #notice a:hover {
+  color: #95A3BF;
+}
+
+#notice h2 {
+  font-size: 20px;
+  color: #FFF;
+  margin-bottom: 20px;
+}
+
+/*공지사항 제목글씨*/
+
+.date2 {
+  font-size: 12px;
+  word-spacing: 20px;
+  color: #999;
+}
+
+/*공지사항-날짜*/
+
+footer {
+  width: 100%;
+  height: 120px;
+  border-top: solid 1px #666;
+  font-size: 12px;
+  line-height: 180%;
+  margin-top: 30px;
+}
+
+/*푸터- 화면에 꽉차게 가로100% 설정*/
+
+#footerwrap {
+  width: 1000px;
+  margin: 20px auto;
+  text-align: center;
+  color: #999;
+}
+
+/*푸터- 가운데 설정하기 위해크기 웹페이지 사이즈로 1000px 가로정렬*/
+
+.fp {
+  font-size: 11px;
+  word-spacing: 20px;
+  color: #FFF;
+}
+
+footer .fp a:link {
+  color: #999;
+}
+
+footer .fp a:hover {
+  color: #A2B5C8;
+}
+
+/*푸터-링크문자 호버시의 색상*/
+
+address {
+  font-style: normal;
+}
+
+/*주소부분- 기울어짐 없애기*/
+
+/*menu.html start*/
+
+#gnb_menu {
+  text-align: center;
+}
+
+#gnb_menu ul li {
+  display: inline-block;
+  /*메인메뉴- 한줄로 나란히*/
+  margin-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+#gnb_menu a {
+  color: black;
+}
+
+#gnb_menu a:hover {
+  color: #FC6;
+}
+
+#main_area {
+  width: 100%;
+  height: 100%;
+  background: #EEE;
+}
+
+/*메인영역- 좌우로 화면에 꽉차게 배경컬러를 넣기위해 가로 100% 크기 */
+
+#main_menu {
+  width: 1100px;
+  height: 800px;
+  margin: 0 auto;
+}
+
+/*메인이미지가 들어갈 부분- 가운데 위치 설정을 하기 위해 웹페이지 크기인 1000px로 가운데 넣어줌*/
+
+#steak1, #steak2 {
+  width: 540px;
+  height: 320px;
+  margin-left: 0px;
+  margin-bottom: 5px;
+  /* position: relative; */
+  /* position: absolute; */
+}
+
+#steak2 {
+  float: right;
+}
+
+#steak4, #steak5, #steak6, #steak7 {
+  width: 250px;
+  height: 320px;
+  margin-bottom: 5px;
+  float: left;
+}
+
+#steak5, #steak7 {
+  margin-left: 40px;
+}
+
+#steak5 {
+  margin-right: 20px;
+}
+
+#RICEMenu, #PIZZAMenu, #PASTAMenu {
+  display: none;
+  width: 1100px;
+  height: 700px;
+  background-color: #EEE;
+}
+
+.RICE {
+  position: absolute;
+}
+
+#rice4, #rice6 {
+  width: 260px;
+  height: 680px;
+}
+
+#rice6 {
+  right: 200px;
+}
+
+#rice5, #rice7 {
+  width: 550px;
+  height: 320px;
+  right: 480px;
+}
+
+#rice7 {
+  top: 520px;
+}
+
+.PIZZA {
+  position: absolute;
+  width: 550px;
+  height: 320px;
+}
+
+#pizzamenu2, #pizzamenu4 {
+  right: 200px;
+}
+
+#pizzamenu3, #pizzamenu4 {
+  top: 520px;
+}
+
+.PASTA {
+  width: 540px;
+  height: 320px;
+}
+
+#pastamenu1, #pastamenu3 {
+  float: left;
+  margin-right: 5px;
+}
+
+#pastamenu1, #pastamenu2 {
+  margin-bottom: 10px;
+}
+
+#pastamenu2, #pastamenu4 {
+  float: right;
+}
+
+/*menu.html end*/
+
+/*steak.html start*/
+
+/*steak.html end*/
+
+/* AddToDo Start*/
+
+#writingFormContainer {
+  background-color: #ffffff;
+  width: 800px;
+  height: 600px;
+  margin: 100px 370px;
+  position: absolute;
+  z-index: 3;
+  display: none;
+}
+
+#writingTransparentBorder {
+  background-color: #000000;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2;
+  display: none;
+}
+
+/* #writingFormContainer img{
+	width: 25px;
+	height: 25px;
+	float: right;
+	margin: 5px 5px;
+} */
+
+#menupop {
+  /* 배경화면 부분*/
+  /* width: 100%; */
+  /* height: 100%; */
+  background-color: #EEE;
+  text-align: center;
+}
+
+.menulogo {
+  position: absolute;
+}
+
+#closeButton {
+  /* 닫기버튼 */
+  position: absolute;
+  right: 0px;
+  width: 60px;
+  height: 50px;
+}
+
+#steakImg, #riceImg, #pizzaImg, #pastaImg {
+  /*  메뉴 div 부분*/
+  text-align: center;
+  /* display: none; */
+}
+
+.beststeak, .bestrice, .bestpizza, .bestpasta {
+  /* 이미지 부분  */
+  width: 500px;
+  height: 300px;
+  position: relative;
+}
+
+/* AddToDo End*/
+
+/* 소개 페이지 start */
+
+#map {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+#youtube2 {
+  margin-top: 10px;
+  width: 1000px;
+  height: 400px;
+  frameborder: 0;
+  position: relative;
+  /* display: none; */
+}
+
+#youtube2 iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* 소개 페이지 end */
+
+/* 예약 페이지 start */
+
+#wrap_menu {
+  width: 1100px;
+  height: 800px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.wrapper img {
+  width: 450px;
+  margin-bottom: 20px;
+}
+
+.name, .email, .place, .date, .time, .size, .submit {
+  width: 400px;
+  height: 40px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-family: Palatino Linotype;
+  border: 1px solid #CCC;
+  background-color: #d7d3c1;
+}
+
+.submit {
+  background-color: #FFF;
+}
+
+.place, .date, .time, .size, .submit {
+  cursor: pointer;
+}
+
+/* 예약 페이지 end */

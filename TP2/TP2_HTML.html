@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TP2</title>
+<link href="css/TP2_CSS.css" rel="stylesheet" />
+</head>
+<body>
+		<div id="writingTransparentBorder"></div>
+		<div id="writingFormContainer">
+			<div id="menupop">
+				<img src="images/close.png" alt="close" id="closeButton"
+					onclick="closeButton()">
+				<div id="steakImg">
+					<h1>BEST STEAK</h1>
+					<img src="images/steak1.png" alt="steak1" class="beststeak">
+					<img src="images/steak2.png" alt="steak2" class="beststeak">
+					<img src="images/steak3.png" alt="steak3" class="beststeak">
+				</div>
+				<div id="riceImg">
+					<h1>BEST RICE</h1>
+					<img src="images/rice1.png" alt="rice1" class="bestrice"> <img
+						src="images/rice2.png" alt="rice2" class="bestrice"> <img
+						src="images/rice3.png" alt="rice3" class="bestrice">
+				</div>
+				<div id="pizzaImg">
+					<h1>BEST PIZZA</h1>
+					<img src="images/pizza1.png" alt="pizza1" class="bestpizza">
+					<img src="images/pizza2.png" alt="pizza2" class="bestpizza">
+					<img src="images/pizza3.png" alt="pizza3" class="bestpizza">
+				</div>
+				<div id="pastaImg">
+					<h1>BEST PASTA</h1>
+					<img src="images/pasta1.png" alt="pasta1" class="bestpasta">
+					<img src="images/pasta2.png" alt="pasta2" class="bestpasta">
+					<img src="images/pasta3.png" alt="pasta3" class="bestpasta">
+				</div>
+			</div>
+
+		</div>
+
+
+		<header>
+			<div id="topmenu">
+				<!-- 상단메뉴 (login, 검색창) -->
+				<div id="toparea">
+					<ul class="toplist">
+						<!-- login, 검색창 목록 작성 -->
+						<li><a href="#"> LOG IN </a></li>
+						<li><a href="#"> JOIN </a></li>
+						<li><a href="#"> CUST </a></li>
+					</ul>
+					<input type="text" class="search" placeholder="검색어를 입력해주세요" />
+					<!-- 검색입력창 만들기-->
+					<div class="search_icon">
+						<!-- 돋보기자리-->
+						<img src="images/zoom.png" alt="검색" />
+					</div>
+					<!-- 돋보기 끝-->
+				</div>
+				<!--toparea 끝-->
+			</div>
+			<!--상단메뉴( login, 검색창) 끝 -->
+
+			<div id="gnbarea">
+				<!-- 메인메뉴 영역 -->
+				<h1 id="logo">
+					<!--로고 영역-->
+					<a href="TP2_HTML.html"><img src="images/logo.png" alt="로고" /></a>
+					<!--로고이미지-->
+				</h1>
+				<!--로고영역 끝-->
+
+				<nav id="gnb">
+					<!--메인메뉴 부분 -->
+					<ul>
+						<!--목록시작-->
+						<li><a href="Brand.html">BRAND </a></li>
+						<li><a href="Menu.html">MENU </a></li>
+						<li><a href="Reservation.jsp">RESERVATION </a></li>
+					</ul>
+					<!-- 목록 끝-->
+				</nav>
+				<!-- 메인메뉴 부분  끝 -->
+			</div>
+			<!--메인메뉴영역 끝-->
+		</header>
+
+		<div id="main_area">
+			<!--메인 슬라이드 영역 -->
+			<button id="nextButton">
+				<img src="images/next.png" alt="next">
+			</button>
+			<button id="prevButton">
+				<img src="images/prev.png" alt="prev">
+			</button>
+			<div id="main">
+				<!--메인그래픽영역-->
+				<img id="mainImg" src="images/mainImg1.png"/>
+				<!--메인이미지 삽입-->
+				<div id="youtube">
+				</div>
+			</div>
+			<!--메인그래픽영역 끝-->
+
+		</div>
+
+		<!-- <div id="writingTransparentBorder"></div>
+    <div id="writingFormContainer">
+      <img src="img/delete.png" onclick="closeButton()" alt="closeimg">
+      <div id="selectDay">
+        <select id="a" name="sDay">
+                <option value="mon">Monday</option>
+                <option value="tue">Tuesday</option>
+                <option value="wed">Wednesday</option>
+                <option value="thu">Thursday</option>
+                <option value="fri">Friday</option>
+        </select>
+      </div>
+      <div id="text">
+        <input type="text" id="title" placeholder=" Item A1">
+        <textarea id="content" rows="8" cols="80" placeholder="Contents A1" ></textarea>
+      </div>
+      <button id="add" onclick="input()" >Add</button>
+    </div> -->
+
+
+		<div id="contents">
+			<!-- 컨텐츠-->
+			<div id="product">
+				<!--제품 목록-->
+				<div class="food" id="steak" onclick="popup()">
+					<a href="#"> <img src="images/mad_25.jpg" alt="스테이크" /></a>
+				</div>
+				<div class="food" id="rice" onclick="popup()">
+					<a href="#"> <img src="images/mad_27.jpg" alt="라이스" />
+					</a>
+				</div>
+				<div class="food" id="pizza" onclick="popup()">
+					<a href="#"> <img src="images/mad_29.jpg" alt="피자" />
+					</a>
+				</div>
+				<div class="food" id="pasta" onclick="popup()">
+					<a href="#"> <img src="images/mad_31.jpg" alt="파스타" />
+					</a>
+				</div>
+				>
+			</div>
+			<!--제품끝-->
+			<div id="bn">
+				<div id="banner">
+					<!-- 제품진열-->
+					<img src="images/mad_39.jpg" alt="피크닉 와인잔출시기념 무료증정 이벤트" />
+				</div>
+				<div id="notice">
+					<!--공지사항-->
+					<h2>공지사항</h2>
+					<ul>
+						<li><a href="#"> <b>MAD SURPRISE</b> &nbsp; 매월 지정일
+								매드서프라이즈! &nbsp; <span class="date2"> 2017-06-28 </span></a></li>
+						<li><a href="#"> <b>MAD CELEBRATION</b> &nbsp; 생일, 결혼기념일
+								스페셜! &nbsp; <span class="date2"> 2017-06-28 </span></a></li>
+						<li><a href="#"> <b>MAD DAY</b> &nbsp; 매월 마지막 주 수요일
+								기억하세요! &nbsp; <span class="date2"> 2017-06-28 </span></a></li>
+						<li><a href="#"> <b>MAD 10%</b> &nbsp; 멤버십이라면 언제나 10%
+								할인제공! &nbsp; <span class="date2"> 2017-06-28 </span></a></li>
+						<li><a href="#"> <b>MAD REWARDS</b> &nbsp; 올수록 커지는 리워즈
+								혜택! &nbsp; <span class="date2"> 2017-06-28 </span>
+						</a></li>
+					</ul>
+				</div>
+				<!--공지사항 끝-->
+			</div>
+			<!--bn 끝-->
+		</div>
+		<!--컨텐츠 끝-->
+
+		<footer>
+			<div id="footerwrap">
+				<p class="fp">
+					<a href="#">서비스이용약관</a> <a href="#">개인정보처리방침</a> <a href="#">기기운영관리방침</a>
+					<a href="#">고객서비스센터</a> <a href="#">관리자문의</a>
+				</p>
+				<address>대전광역시 유성구 대학로 99 충남대학교</address>
+
+			</div>
+		</footer>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<!-- <script src="https://www.youtube.com/player_api"></script>
+	<script src="https://www.youtube.com/iframe_api"></script> -->
+	<script type="text/javascript" src="js/TP2_SCRIPT.js"></script>
+</body>
+</html>

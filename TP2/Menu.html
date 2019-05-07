@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TP2</title>
+<link href="css/TP2_CSS.css" rel="stylesheet"/>
+<script type="text/javascript" src="js/TP2_SCRIPT.js"></script>
+</head>
+
+<body>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://www.youtube.com/player_api"></script>
+	<header>
+    	<div id="topmenu"> <!-- 상단메뉴 (login, 검색창) -->
+        	<div id="toparea">
+            	<ul class="toplist"> <!-- login, 검색창 목록 작성 -->
+                 	<li> <a href="#"> LOG IN </a></li>
+                    <li> <a href="#"> JOIN </a></li>
+                    <li> <a href="#"> CUST </a></li>
+                </ul>
+                <input type="text" class="search" placeholder="검색어를 입력해주세요" /> <!-- 검색입력창 만들기-->
+                    <div class="search_icon"> <!-- 돋보기자리-->
+                		<img src="images/zoom.png" alt="검색"/>
+                	</div> <!-- 돋보기 끝-->
+            </div> <!--toparea 끝-->
+        </div> <!--상단메뉴( login, 검색창) 끝 -->
+
+        <div id="gnbarea"> <!-- 메인메뉴 영역 -->
+        	<h1 id="logo"> <!--로고 영역-->
+            <a href="TP2_HTML.html"><img src="images/logo.png" alt="로고"/></a> <!--로고이미지-->
+            </h1> <!--로고영역 끝-->
+
+            <nav id="gnb"> <!--메인메뉴 부분 -->
+            	<ul><!--목록시작-->
+                	<li> <a href="Brand.html">BRAND </a> </li>
+                    <li> <a href="Menu.html">MENU </a> </li>
+                    <li> <a href="#">RESERVATION </a> </li>
+                </ul> <!-- 목록 끝-->
+            </nav> <!-- 메인메뉴 부분  끝 -->
+        </div>  <!--메인메뉴영역 끝-->
+    </header>
+
+    <div id="main_area" > <!--메인 슬라이드 영역 -->
+    	<div id="main_menu"> <!--메인그래픽영역-->
+				  <nav id="gnb_menu">
+						<ul><!--목록시작-->
+							<li onclick="menulook()"> <a href="#">STEAK</a> </li>
+								<li onclick="menulook()"> <a href="#">RICE</a> </li>
+								<li> <a href="#" onclick="menulook()">PIZZA</a> </li>
+								<li> <a href="#" onclick="menulook()">PASTA</a> </li>
+							</ul> <!-- 목록 끝-->
+						</nav>
+
+						<div id="STEAKMenu">
+							<img src="images/steak1.png" alt="steak1" id="steak1" class="STEAK">
+							<img src="images/steak2.png" alt="steak2" id="steak2" class="STEAK">
+							<img src="images/steak4.png" alt="steak4" id="steak4" class="STEAK">
+							<img src="images/steak5.png" alt="steak5" id="steak5" class="STEAK">
+							<img src="images/steak6.png" alt="steak6" id="steak6" class="STEAK">
+							<img src="images/steak7.png" alt="steak7" id="steak7" class="STEAK">
+							<!-- <img src="images/steak3.png" alt="steak3" id="steak3" class="STEAK">
+							<img src="images/steak8.png" alt="steak8" id="steak8" class="STEAK"> -->
+						</div>
+
+						<div id="RICEMenu">
+							<img src="images/rice4.png" alt="rice4" id="rice4" class="RICE">
+							<img src="images/rice5.png" alt="rice5" id="rice5" class="RICE">
+							<img src="images/rice6.png" alt="rice6" id="rice6" class="RICE">
+							<img src="images/rice7.png" alt="rice7" id="rice7" class="RICE">
+						</div>
+
+						<div id="PIZZAMenu">
+							<img src="images/pizzamenu1.png" alt="pizza1" id="pizzamenu1" class="PIZZA">
+							<img src="images/pizzamenu2.png" alt="pizza2" id="pizzamenu2" class="PIZZA">
+							<img src="images/pizzamenu3.png" alt="pizza3" id="pizzamenu3" class="PIZZA">
+							<img src="images/pizzamenu4.png" alt="pizza4" id="pizzamenu4" class="PIZZA">
+						</div>
+
+						<div id="PASTAMenu">
+							<img src="images/pastamenu1.png" alt="pasta1" id="pastamenu1" class="PASTA">
+							<img src="images/pastamenu2.png" alt="pasta2" id="pastamenu2" class="PASTA">
+							<img src="images/pastamenu3.png" alt="pasta3" id="pastamenu3" class="PASTA">
+							<img src="images/pastamenu4.png" alt="pasta4" id="pastamenu4" class="PASTA">
+						</div>
+
+        </div> <!--메인그래픽영역 끝-->
+    </div>
+
+    <footer>
+    	<div id="footerwrap">
+        	<p class="fp">
+                <a href="#">서비스이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">기기운영관리방침</a>
+                <a href="#">고객서비스센터</a>
+                <a href="#">관리자문의</a>
+            </p>
+            <address> 서울특별시 강남구 압구정로 222(신사동) ㈜엠에프지코리아 </address>
+			<p> COPYRIGHT ⓒ MFGKOREA ALL RIGHTS RESERVED. </p>
+        </div>
+    </footer>
+
+</body>
+</html>

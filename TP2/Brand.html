@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TP2</title>
+<link href="css/TP2_CSS.css" rel="stylesheet"/>
+</head>
+
+<body>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://www.youtube.com/player_api"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+	<script type="text/javascript" src="js/TP2_SCRIPT2.js"></script>
+	<script>
+	function myMap() {
+		var uluru = {lat: 36.362807, lng: 127.34486}; // 위치
+		var map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 16,
+			center: uluru
+		});
+		var marker = new google.maps.Marker({ // 마커
+			position: uluru,
+			map: map
+		});
+	}
+	</script>
+	<header>
+    	<div id="topmenu"> <!-- 상단메뉴 (login, 검색창) -->
+        	<div id="toparea">
+            	<ul class="toplist"> <!-- login, 검색창 목록 작성 -->
+                 	<li> <a href="#"> LOG IN </a></li>
+                    <li> <a href="#"> JOIN </a></li>
+                    <li> <a href="#"> CUST </a></li>
+                </ul>
+                <input type="text" class="search" placeholder="검색어를 입력해주세요" /> <!-- 검색입력창 만들기-->
+                    <div class="search_icon"> <!-- 돋보기자리-->
+                		<img src="images/zoom.png" alt="검색"/>
+                	</div> <!-- 돋보기 끝-->
+            </div> <!--toparea 끝-->
+        </div> <!--상단메뉴( login, 검색창) 끝 -->
+
+        <div id="gnbarea"> <!-- 메인메뉴 영역 -->
+        	<h1 id="logo"> <!--로고 영역-->
+            <a href="TP2_HTML.html"><img src="images/logo.png" alt="로고"/></a> <!--로고이미지-->
+            </h1> <!--로고영역 끝-->
+
+            <nav id="gnb"> <!--메인메뉴 부분 -->
+            	<ul><!--목록시작-->
+                	<li> <a href="Brand.html">BRAND </a> </li>
+                    <li> <a href="Menu.html">MENU </a> </li>
+                    <li> <a href="#">RESERVATION </a> </li>
+                </ul> <!-- 목록 끝-->
+            </nav> <!-- 메인메뉴 부분  끝 -->
+        </div>  <!--메인메뉴영역 끝-->
+    </header>
+
+    <div id="main_area" > <!--메인 슬라이드 영역 -->
+    	<div id="main"> <!--메인그래픽영역-->
+				<h2>INTRODUCE</h2>
+				<div id="youtube2"></div>
+				<h2>LOCATION</h2>
+				<div id="map"></div>	 <!--메인이미지 삽입-->
+        </div> <!--메인그래픽영역 끝-->
+    </div>
+
+    <footer>
+    	<div id="footerwrap">
+        	<p class="fp">
+                <a href="#">서비스이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">기기운영관리방침</a>
+                <a href="#">고객서비스센터</a>
+                <a href="#">관리자문의</a>
+            </p>
+            <address> 서울특별시 강남구 압구정로 222(신사동) ㈜엠에프지코리아 </address>
+			<p> COPYRIGHT ⓒ MFGKOREA ALL RIGHTS RESERVED. </p>
+        </div>
+    </footer>
+
+</body>
+</html>
